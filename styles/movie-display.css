@@ -1,0 +1,32 @@
+.card-item {
+    width: 185px;
+}
+
+div.movie-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+p.movie-year, h2.movie-title{
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+p.movie-year{
+    margin-top: 2px;
+    font-size: 0.95em;
+    color: rgba(0,0,0,0.6);   
+}
+
+h2.movie-title {
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.movie-card img{
+    height: auto;
+}

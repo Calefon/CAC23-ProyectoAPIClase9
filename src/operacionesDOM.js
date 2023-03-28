@@ -17,10 +17,12 @@ const renderizarTarjetaDePelicula = ({posterPath,releaseDate,title,id}) => {
 
     let poster = document.createElement("img");
     poster.src = posterPath;
+    poster.classList.add("card-item");
     card.appendChild(poster);
 
     let movieTitle = document.createElement("h2");
     movieTitle.classList.add("movie-title");
+    movieTitle.classList.add("card-item");
     movieTitle.textContent = title;
     card.appendChild(movieTitle);
 
@@ -28,6 +30,7 @@ const renderizarTarjetaDePelicula = ({posterPath,releaseDate,title,id}) => {
     let year = document.createElement("p");
     year.classList.add("movie-year");
     year.textContent = releaseYear;
+    year.classList.add("card-item");
     card.appendChild(year);
 
     PAGE.appendChild(card);
