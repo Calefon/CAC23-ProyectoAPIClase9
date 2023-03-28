@@ -1,0 +1,14 @@
+#logo-themoviedb {
+    width: 120px;
+    height: auto;
+}
+
+#IMDb-credit-container{
+    justify-content: start;
+    margin: 20px;
+}
+#credit-p{
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
