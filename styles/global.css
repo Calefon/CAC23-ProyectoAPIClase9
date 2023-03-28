@@ -10,7 +10,7 @@
     flex-direction: row;
 }
 body,html {
-    height: 100vh;
+    height: fit-content;
 }
 
 body{
@@ -36,6 +36,12 @@ nav {
     background-color: rgb(61, 61, 61);
     margin: 0;
     padding: 0;
+}
+#footer{
+    margin-top: 4vh;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(61, 61, 61);;
 }
 
 div.nav-button{

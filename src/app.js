@@ -1,7 +1,5 @@
-import {axiosGetPopularMovies,configAPI,getMovieData,getBackdropURL,getPosterURL} from "../src/api-request.js"
-import {renderizarPaginaDePeliculas} from "../src/operacionesDOM.js"
-
-console.log(configAPI);
+import getMovieData from "../src/api-request.js"
+import renderizarPaginaDePeliculas from "../src/operacionesDOM.js"
 
 let pagina = 1;
 getMovieData(pagina).then(res => renderizarPaginaDePeliculas(res));
@@ -38,9 +36,3 @@ const handlerBtnSiguiente = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 btnSiguiente.addEventListener("click",handlerBtnSiguiente);
-
-
-
-
-
-axiosGetPopularMovies();

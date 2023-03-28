@@ -48,4 +48,4 @@ const clearPage = () => {
     }
 }
 
-export {renderizarPaginaDePeliculas}
+export default renderizarPaginaDePeliculas

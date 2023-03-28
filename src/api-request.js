@@ -37,7 +37,7 @@ const getMovieData = async (pagina) => {
       res=>movies=res.map(
           movie => {
               return {
-                  posterPath: getPosterURL(movie.poster_path),
+                  posterPath: getPosterURL(movie.poster_path,2),
                   releaseDate: movie.release_date,
                   title: movie.original_title,
                   id: movie.id
@@ -81,4 +81,5 @@ const axiosGetPoster = async (posterURL,size=0) => {
 
 
 export {axiosGetPopularMovies,getMovieData,configAPI,axiosGetBackdrop,axiosGetPoster,getBackdropURL,getPosterURL};
+export default getMovieData;
 
