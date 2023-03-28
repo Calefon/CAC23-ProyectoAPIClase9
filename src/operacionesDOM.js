@@ -20,18 +20,24 @@ const renderizarTarjetaDePelicula = ({posterPath,releaseDate,title,id}) => {
     poster.classList.add("card-item");
     card.appendChild(poster);
 
+    let cardContainer = document.createElement("div");
+    cardContainer.classList.add("card-container");
+    cardContainer.classList.add("card-item");
+    card.appendChild(cardContainer);
+    
+
     let movieTitle = document.createElement("h2");
     movieTitle.classList.add("movie-title");
     movieTitle.classList.add("card-item");
     movieTitle.textContent = title;
-    card.appendChild(movieTitle);
+    cardContainer.appendChild(movieTitle);
 
     let releaseYear = new Date(releaseDate).getFullYear();
     let year = document.createElement("p");
     year.classList.add("movie-year");
     year.textContent = releaseYear;
     year.classList.add("card-item");
-    card.appendChild(year);
+    cardContainer.appendChild(year);
 
     PAGE.appendChild(card);
 }

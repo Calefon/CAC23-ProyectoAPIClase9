@@ -27,13 +27,15 @@ let btnSiguiente = document.querySelector("#btnSiguiente");
 const handlerBtnAnterior = () => {
     cambiarPagina(false);
     getMovieData(pagina).then(res => renderizarPaginaDePeliculas(res));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 btnAnterior.addEventListener("click",handlerBtnAnterior);
 
 //funcion btn sig
 const handlerBtnSiguiente = () => {
     cambiarPagina(true);
-    getMovieData(pagina).then(res => renderizarPaginaDePeliculas(res));   
+    getMovieData(pagina).then(res => renderizarPaginaDePeliculas(res));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 btnSiguiente.addEventListener("click",handlerBtnSiguiente);
 
